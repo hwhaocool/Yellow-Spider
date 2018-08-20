@@ -1,0 +1,7 @@
+{
+    "login_url": "http://smingyue.com/member.php?mod=logging&action=login&loginsubmit=yes&infloat=yes&lssubmit=yes&inajax=1",
+    "sign_url": "http://smingyue.com/plugin.php?id=dsu_paulsign:sign&operation=qiandao&infloat=1&sign_as=1&inajax=1",
+    "index_url": "http://smingyue.com/forum.php",
+    "user_name": "lenvo58",
+    "password": "ms1018"
+}
