@@ -1,23 +1,38 @@
+#coding=utf-8
 #author: hwhaocool
 #since: 2018-08-19
 
+import json
+
 class Config:
-    json = {}
+    """配置项"""
+
+    conf = {}
 
     def __init__(self):
-        pass
+        f = open("config.json", 'rb')
+        self.conf = json.load(f )
+        f.close()
+        
+        print "Config load completed"
 
     def getLoginUrl(self):
-        return json["login_url"]
+        """登录地址"""
+        return self.conf["login_url"]
 
     def getSignUrl(self):
-        return json["sign_url"]
+        """签到地址"""
+        return self.conf["sign_url"]
 
     def getIndexUrl(self):
-        return json["index_url"]
+        """首页地址"""
+        return self.conf["index_url"]
 
     def getUserName(self):
-        return json["user_name"]
+        return self.conf["user_name"]
 
     def getPassword(self):
-        return json["password"]
+        return self.conf["password"]
+
+    def getQmIndexUrl(self):
+        return self.conf["qm_index_url"]
